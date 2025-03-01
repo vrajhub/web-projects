@@ -1,0 +1,92 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    /* outline: 2px solid red; */
+}
+body{
+    background: linear-gradient(to left,gray,orange,gray,orange);
+}
+#gameEnd{
+    position:absolute;
+    right:52vh;
+    bottom:8vh;
+    font-size: 6vh;
+}
+#levelBoard{
+    position:fixed;
+    right:20vh;
+    top:38vh;
+    font-size: 6vh;
+    
+}
+#infoH3{
+    position:fixed;
+    left:10vh;
+    top:38vh;
+    font-size: 6vh;
+    
+}
+h1 {
+    text-align: center;
+    text-decoration: underline black;
+    font-weight: 8vh;
+    font-size: 8vw;
+    color:rgb(178, 25, 25);
+    /* filter: drop-shadow(3px 3px 30px rgb(93, 255, 152)); */
+   
+}
+
+h3 {
+    text-align: center;
+    font-size: 30px;
+    color:rgb(115, 48, 0);
+}
+
+#main {
+    height: 600px;
+    /* width: 200px; */
+    /* background-color: aquamarine; */
+    display: flex;
+    direction:column;
+    justify-content:center;
+    /* background: linear-gradient(to left,gray,orange,gray,orange); */
+  
+
+}
+
+.btn {
+    height: 250px;
+    width: 250px;
+    border: solid black 5px;
+    /* background-color:rebeccapurple; */
+    border-radius: 25px;
+    text-align: center;
+    font-size: 30px;
+    color: aliceblue;
+    margin: 2rem;
+    
+}
+
+
+.brown {
+    background-color: darkgoldenrod;
+}
+.blue {
+    background-color: rgb(11, 158, 184);
+}
+.purple {
+    background-color: rgb(98, 11, 184);
+}
+.red {
+    background-color: rgb(184, 11, 80);
+}
+
+.flash{
+
+    background-color: white;
+}
+
+.userFlash{
+    background-color: chartreuse;
+}
