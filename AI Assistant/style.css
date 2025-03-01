@@ -1,0 +1,231 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    /* outline:2px solid red; */
+}
+
+#voice{
+    mix-blend-mode: screen;
+    background:none;
+    /* backdrop-filter: blur(10px); */
+    /* font-size: 4vh; */
+    background-position:center;
+    background-size: cover;
+    position: fixed;
+    height: 15vh;
+    width:15vw;
+    /* background-color: bisque; */
+    /* border:0.9px solid white;
+    box-shadow: 2px 2px 15px white,
+    2px 2px 15px white inset; */
+    /* border-radius: 30px; */
+    z-index: 3;
+    transform: translate(-0%,260%);
+    /* animation: btnVisible 3s ease-in-out 0s 1 forwards; */
+    opacity: 1;
+    display: none;
+
+}
+
+button{
+    background: transparent;
+    backdrop-filter: blur(10px);
+    font-size: 4vh;
+    position: fixed;
+    height: 10vh;
+    width:35vw;
+    /* background-color: bisque; */
+    border-radius: 30px;
+    z-index: 4;
+    transform: translate(-0%,350%);
+    animation: btnVisible 3s ease-in-out 0s 1 forwards;
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+    border: none;
+   
+}
+button:hover{
+    /* transition: border 0.2s ease-in-out; */
+    opacity: 1;
+    border:0.9px solid white;
+    box-shadow: 2px 2px 15px white,
+    2px 2px 15px white inset;
+    border:2px solid white;
+    cursor: pointer;
+}
+button span{
+    /* background-image: linear-gradient(to right, #99ff00, #c72dff,red,rgb(63, 255, 252)); */
+    color:white;
+    font-weight: 900;
+    -webkit-background-clip: text;  /* For Safari and Chrome */
+    background-clip: text;          /* For other browsers (latest versions) */
+    /* color: transparent;  */
+}
+@keyframes btnVisible {
+    0%,50% {
+        /* z-index: 3;
+        opacity: 1;
+        font-size: 20vw; */
+        display: none;
+    }
+    50%,80%{
+        /* z-index: 2;
+        opacity: 0.5;
+        font-size: 17.5vw; */
+        display: none;
+    }
+    80%,98% {
+        /* z-index: 1;
+        opacity: 0;
+        font-size: 15vw; */
+       /* display:visible; */
+       display: none;
+    }
+    2%{
+        /* filter: drop-shadow(3px 3px 30px rgb(255, 255, 255)); */
+        display:visible;
+    }
+}
+
+#main{
+    min-height: 100vh;
+    background-color: black;
+    background-size: contain;
+    display: flex;
+    direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+#main #robot{
+    position: absolute;
+    background-position:center;
+    background-size: contain;
+    height: 90%;
+    width:50%;
+    filter: drop-shadow(3px 3px 30px rgb(191, 86, 86));
+    z-index: 2;
+    animation: moveimg 3s ease-in-out 0s 1 forwards;
+
+}
+@keyframes moveimg {
+    0%,50% {
+        /* z-index: 3;
+        opacity: 1;
+        font-size: 20vw; */
+        display: none;
+    }
+    50%,80%{
+        /* z-index: 2;
+        opacity: 0.5;
+        font-size: 17.5vw; */
+        display: none;
+    
+    }
+    80%,98% {
+        /* z-index: 1;
+        opacity: 0;
+        font-size: 15vw; */
+        display: none;
+        filter: drop-shadow(3px 3px 30px rgb(255, 255, 255));
+    }
+    2%{
+        display: visible;
+        filter: drop-shadow(3px 3px 30px rgb(255, 255, 255));
+    }
+}
+#main #backh1{
+
+    position: fixed;
+    margin-bottom: 25vh;
+    font-size: 15vw;
+    background: linear-gradient(to right,gray,white,gray);
+    -webkit-background-clip: text;  /* For Safari and Chrome */
+    background-clip: text;          /* For other browsers (latest versions) */
+    color: transparent; 
+    text-align: center;
+    z-index: 1;
+    animation: backh1 3s ease-in-out 0s 1 forwards; /* Apply animation */
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+
+}
+@keyframes backh1 {
+    0%,50% {
+        /* z-index: 3;
+        opacity: 1;
+        font-size: 20vw; */
+        display: none;
+    }
+    50%,80%{
+        /* z-index: 2;
+        opacity: 0.5;
+        font-size: 17.5vw; */
+        display: none;
+    
+    }
+    80%,98% {
+        /* z-index: 1;
+        opacity: 0;
+        font-size: 15vw; */
+        display: none;
+
+    }
+    2%{
+        display: visible;
+
+    }
+}
+
+
+
+#main #welcome{
+    font-family: "Orbitron", serif;
+    font-size: 13vw;
+    background: linear-gradient(to right,gray,white,gray);
+    -webkit-background-clip: text;  /* For Safari and Chrome */
+    background-clip: text;          /* For other browsers (latest versions) */
+    color: transparent; 
+    text-align: center;
+    z-index: 1;
+    opacity: 0;
+    animation: moveZIndex 3s ease-in-out 0s 1 forwards; /* Apply animation */
+ 
+}
+        /* Keyframes to animate z-index */
+        @keyframes moveZIndex {
+            0%,50% {
+                z-index: 3;
+                opacity: 1;
+                font-size: 15vw;
+                background: linear-gradient(to right,gray,white,gray);
+                -webkit-background-clip: text;  /* For Safari and Chrome */
+                background-clip: text;          /* For other browsers (latest versions) */
+                color: transparent; 
+            }
+            50%,80%{
+                z-index: 2;
+                opacity: 0.6;
+                font-size: 14.5vw;
+                background: linear-gradient(to right,gray,white,gray);
+                -webkit-background-clip: text;  /* For Safari and Chrome */
+                background-clip: text;          /* For other browsers (latest versions) */
+                color: transparent; 
+
+            }
+            80%,98% {
+                z-index: 1;
+                opacity: 0;
+                font-size: 13vw;
+                background: linear-gradient(to right,gray,white,gray);
+                -webkit-background-clip: text;  /* For Safari and Chrome */
+                background-clip: text;          /* For other browsers (latest versions) */
+                color: transparent; 
+            }
+            2%{
+                z-index: 1;
+                opacity: 1;
+                font-size: 12vw;
+            }
+        }
