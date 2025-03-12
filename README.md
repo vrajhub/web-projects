@@ -82,8 +82,6 @@ If you make changes to the project, follow these steps to push them back to the 
 ## 🛠️ Technologies Used
 
 - **Front-end:** HTML, CSS, JavaScript
-- **Database:** (if applicable, mention the database used)
-- **Other Tools:** Git, Node.js (if applicable)
 
 ## 🤝 Contributions
 
