@@ -16,7 +16,7 @@ An AI chatbot that enhances user interaction and provides intelligent responses.
 
 A conversational AI chatbot designed for seamless user interaction.
 
-- **Tech Stack:** HTML, CSS, JavaScript, Database
+- **Tech Stack:** HTML, CSS, JavaScript
 - **Features:** AI-powered responses, interactive UI
 - **Status:** Ongoing development
 
