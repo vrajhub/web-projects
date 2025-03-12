@@ -1,6 +1,6 @@
 # Vanpirex Projects
 
-Welcome to my repository! I'm Vanp, a passionate web developer dedicated to creating engaging and user-friendly applications. This repository showcases my projects, including an AI chatbot and more.
+Welcome to my repository! I'm Vraj Patel, a passionate web developer dedicated to creating engaging and user-friendly applications. This repository showcases my projects, including an AI chatbot and more.
 
 ## 🚀 Projects
 
